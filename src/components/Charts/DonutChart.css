@@ -1,0 +1,72 @@
+/* ==========================================================================
+   DONUT CHART STYLES
+   ========================================================================== */
+
+.donut-canvas-wrap {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 1rem;
+}
+
+.donut-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .donut-canvas-wrap {
+    width: 140px;
+    height: 140px;
+  }
+}
+/* ==========================================================================
+   DONUT CHART STYLES
+   ========================================================================== */
+
+.donut-canvas-wrap {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 1rem;
+}
+
+.donut-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .donut-canvas-wrap {
+    width: 140px;
+    height: 140px;
+  }
+}

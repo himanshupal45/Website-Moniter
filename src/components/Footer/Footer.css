@@ -1,0 +1,504 @@
+/* ==========================================================================
+   FOOTER - MAIN
+   ========================================================================== */
+.footer {
+    margin-top: auto;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid var(--border-color);
+    padding: 2.5rem 0 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ==========================================================================
+   FOOTER ROWS
+   ========================================================================== */
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-row-main {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.footer-row-tech {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.footer-row-links {
+    padding-bottom: 1rem;
+}
+
+.footer-row-bottom {
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* ==========================================================================
+   BRAND SECTION
+   ========================================================================== */
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo {
+    height: 45px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-brand:hover .footer-logo {
+    transform: scale(1.05) rotate(-5deg);
+}
+
+.footer-brand-text h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.15rem;
+    background: linear-gradient(135deg, var(--color-primary), #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-brand-text p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* ==========================================================================
+   SOCIAL LINKS
+   ========================================================================== */
+.footer-social {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg-surface-el);
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.3);
+}
+
+.social-link:nth-child(1):hover {
+    background: #333;
+    border-color: #333;
+}
+
+.social-link:nth-child(2):hover {
+    background: #1da1f2;
+    border-color: #1da1f2;
+}
+
+.social-link:nth-child(3):hover {
+    background: #0077b5;
+    border-color: #0077b5;
+}
+
+/* ==========================================================================
+   TECH STACK
+   ========================================================================== */
+.tech-stack h4 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tech-icons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.85rem;
+    background: var(--bg-surface-el);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    color: var(--text-main);
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.tech-item svg {
+    font-size: 1rem;
+}
+
+.tech-item:nth-child(1):hover svg {
+    color: #61dafb;
+}
+
+.tech-item:nth-child(2):hover svg {
+    color: #646cff;
+}
+
+.tech-item:nth-child(3):hover svg {
+    color: #68a063;
+}
+
+.tech-item:nth-child(4):hover svg {
+    color: #4ea94b;
+}
+
+/* ==========================================================================
+   STATUS BADGE
+   ========================================================================== */
+.footer-status {
+    display: flex;
+    align-items: center;
+}
+
+.status-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 1rem;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-up);
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-up);
+    animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+}
+
+/* ==========================================================================
+   FOOTER LINKS
+   ========================================================================== */
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--text-main);
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+/* ==========================================================================
+   BOTTOM SECTION
+   ========================================================================== */
+.footer-row-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.footer-copyright {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.footer-made-with {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.heart-icon {
+    color: #ef4444;
+    animation: heartbeat 1.5s ease-in-out infinite;
+    font-size: 0.85rem;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .footer-container {
+        padding: 0 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .footer-row-main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-social {
+        align-self: flex-start;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+
+    .footer-container {
+        padding: 0 1rem;
+        gap: 1.25rem;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-row-main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-row-tech {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-brand {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-logo {
+        height: 38px;
+    }
+
+    .footer-brand-text h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-brand-text p {
+        font-size: 0.8rem;
+    }
+
+    .footer-social {
+        align-self: flex-start;
+    }
+
+    .social-link {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .tech-icons {
+        gap: 0.6rem;
+    }
+
+    .tech-item {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.65rem;
+    }
+
+    .tech-item svg {
+        font-size: 0.85rem;
+    }
+
+    .footer-status {
+        width: 100%;
+    }
+
+    .status-badge {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-links {
+        gap: 1rem;
+    }
+
+    .footer-link {
+        font-size: 0.8rem;
+    }
+
+    .footer-row-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-copyright {
+        font-size: 0.75rem;
+    }
+
+    .footer-made-with {
+        font-size: 0.75rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .footer {
+        padding: 1.5rem 0 0.75rem;
+    }
+
+    .footer-container {
+        padding: 0 0.75rem;
+        gap: 1rem;
+    }
+
+    .footer-logo {
+        height: 32px;
+    }
+
+    .footer-brand-text h3 {
+        font-size: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-link {
+        width: 100%;
+        text-align: center;
+        padding: 0.25rem 0;
+    }
+
+    .footer-link::after {
+        display: none;
+    }
+
+    .tech-icons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-social {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ==========================================================================
+   DARK THEME SPECIFIC
+   ========================================================================== */
+[data-theme="dark"] .status-badge {
+    background: rgba(52, 211, 153, 0.15);
+    border-color: rgba(52, 211, 153, 0.2);
+}
+
+[data-theme="dark"] .tech-item:hover {
+    background: rgba(79, 70, 229, 0.15);
+}
+
+[data-theme="dark"] .social-link:hover {
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.2);
+}
+
+/* ==========================================================================
+   LIGHT THEME SPECIFIC
+   ========================================================================== */
+[data-theme="light"] .status-badge {
+    background: rgba(16, 185, 129, 0.08);
+    border-color: rgba(16, 185, 129, 0.2);
+}
+
+[data-theme="light"] .tech-item:hover {
+    background: rgba(79, 70, 229, 0.05);
+}
