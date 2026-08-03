@@ -166,6 +166,9 @@
   .dash-right-col {
     flex-direction: column;
   }
+  .page-container{
+  padding: 1rem;
+}
   .dash-bottom-row {
     flex-direction: column;
   }
