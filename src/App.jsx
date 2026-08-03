@@ -222,14 +222,14 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
 
-          <Route
-            path="/"
-            element={
-              <ProtectedRoute>
-                <Dashboard stats={stats} />
-              </ProtectedRoute>
-            }
-          />
+         <Route
+  path="/"
+  element={
+    isAuthenticated 
+      ? <Dashboard stats={stats} />
+      : <Login />
+  }
+/>
           <Route
             path="/websites"
             element={
