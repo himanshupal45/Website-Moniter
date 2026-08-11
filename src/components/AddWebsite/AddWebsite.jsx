@@ -79,7 +79,7 @@ function AddWebsite({ onAddWebsite, loading }) {
                 <input
                   id="name"
                   type="text"
-                  placeholder="My Website"
+                  placeholder="Your website name"
                   value={newWebsite.name}
                   onChange={(e) => setNewWebsite({ ...newWebsite, name: e.target.value })}
                   disabled={adding}
