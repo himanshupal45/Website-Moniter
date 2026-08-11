@@ -45,8 +45,8 @@ function AddWebsite({ onAddWebsite, loading }) {
     <div className="page-container">
       <div className="add-website-wrapper">
         <div className="add-website-header">
-          <h1>Add New Target</h1>
-          <p>Monitor any website or API endpoint</p>
+          <h1>Add New Website</h1>
+          <p>Monitor your website's performance and uptime</p>
         </div>
 
         <div className="add-website-card">
@@ -72,14 +72,14 @@ function AddWebsite({ onAddWebsite, loading }) {
 
             <div className="form-group">
               <label htmlFor="name">
-                Label / Name <span className="optional">(Optional)</span>
+                Website Name <span className="optional">(Optional)</span>
               </label>
               <div className="input-icon-wrapper">
                 <FaTag className="icon" />
                 <input
                   id="name"
                   type="text"
-                  placeholder="My API Service"
+                  placeholder="My Website"
                   value={newWebsite.name}
                   onChange={(e) => setNewWebsite({ ...newWebsite, name: e.target.value })}
                   disabled={adding}

@@ -9,7 +9,7 @@ import {
   FaNodeJs,
   FaDatabase
 } from "react-icons/fa";
-import { SiMongodb, SiVite } from "react-icons/si";
+import { SiMongodb, SiExpress } from "react-icons/si";
 import WMlogo from "../../assets/WMlogo.png";
 import "./Footer.css";
 
@@ -69,7 +69,7 @@ const Footer = () => {
                 <FaReact /> React
               </span>
               <span className="tech-item">
-                <SiVite /> Vite
+                <SiExpress /> Express.js
               </span>
               <span className="tech-item">
                 <FaNodeJs /> Node.js
@@ -105,7 +105,7 @@ const Footer = () => {
             © {currentYear} Monitor Pro. All rights reserved.
           </p>
           <p className="footer-made-with">
-            Made with <FaHeart className="heart-icon" /> by Monitor Pro Team
+            Made with  by Monitor Pro Team
           </p>
         </div>
       </div>
